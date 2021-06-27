@@ -1,0 +1,1 @@
+This is an odin project excercise to recreate the Google homepage.
