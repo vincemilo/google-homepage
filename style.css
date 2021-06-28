@@ -13,38 +13,64 @@ body, input, button {
     font-family: arial,sans-serif;
     color: #222;
 }
+
 body {
     background: #fff;
 }
 
-header {
+a:hover {
+    text-decoration: underline;
+}
+
+div a {
+    padding: 5px;
+    color:black;
+    text-decoration: none;
+}
+
+header, footer {
+    padding: 20px;
     display: flex;
     justify-content: space-between;
 }
 
 main {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 50%;
-    padding-top: 109px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 220px;
 }
 
-.logo {
-    display: inherit;
+.searchbar {
+    margin-top: 25px;
+    margin-bottom: 25px;
+    width: 75%;
+    padding: 1rem;
+    border: 0.1px solid #ddd;
+    border-radius: 24px;
 }
 
 .material-icons-outlined {
     font-family: 'material icons';
 }
 
-.searchbar {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    width: 580px;
-    padding: 1rem;
-    padding-right: 1.5rem;
-    border: 0.1px solid #ddd;
-    border-radius: 30px;
+#search {
+    border:none;
+    outline:none;
+    width:90%;
+}
+
+.buttons {
+    box-shadow: 0 1px 1px rgba(0,0,0,.1);
+    background-color: #f8f9fa;
+    border: 1px solid #dadce0;
+    color: #202124;
+}
+
+footer {
+    background-color: lightgray;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    padding-right: 50px;
 }
