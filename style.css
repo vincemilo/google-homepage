@@ -28,14 +28,16 @@ div a {
     text-decoration: none;
 }
 
+div, header, main, footer {
+    display: flex;
+}
+
 header, footer {
     padding: 20px;
-    display: flex;
     justify-content: space-between;
 }
 
 main {
-    display: flex;
     flex-direction: column;
     align-items: center;
     padding-top: 220px;
@@ -52,6 +54,7 @@ main {
 
 .material-icons-outlined {
     font-family: 'material icons';
+    font-size: 20px;
 }
 
 #search {
@@ -60,17 +63,36 @@ main {
     width:90%;
 }
 
+.searchbar:hover {
+    box-shadow: 0px 1.7px 5px #dfdfdf;
+    outline: none; 
+}
+
 .buttons {
-    box-shadow: 0 1px 1px rgba(0,0,0,.1);
-    background-color: #f8f9fa;
-    border: 1px solid #dadce0;
-    color: #202124;
+    flex-direction: row;
+}
+
+.buttons div {
+    margin:5px;
+    padding:10px;
+    color:black;
+    background-color: #eee;
+    cursor:pointer;
+    border-radius: 5px;
+    border: 1px solid transparent;
+}
+
+.buttons div:hover {
+    border: 1px solid #c0c0c0;
 }
 
 footer {
-    background-color: lightgray;
+    background-color:#eee;
     position: fixed;
     bottom: 0;
     width: 100%;
+}
+
+.right {
     padding-right: 50px;
 }
